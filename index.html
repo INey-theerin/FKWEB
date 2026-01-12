@@ -1,35 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Ney's note</title>
+    <title>Theerin's Portfolio</title>
     
+    <style>
+        body {           
+            background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 1);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            border: 5px solid rgba(0,0,0,0.1);
+            display: block;
+            margin: 20px auto;
+            transition: transform 0.3s;
+        }
+        img:hover{
+            transform: scale(1.05);   
+        }
+        nav {
+            color: #800000;
+            text-align: center;
+            margin: 0 10px;
+        }
+        
+        h1 {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-shadow: 2px 2px 4px #000000;
+            border: 2.5px solid #ffffff;
+            border-radius: 10px;
+            border-style: double;
+            margin-left: auto;
+            margin-right: auto;  
+        }
+        h2 {
+            color: #003366;
+            text-align: center;
+            border-top: 3px solid #003366;
+            border-width: 50%;
+            padding: 10px;            
+        }
+        a {
+            color: #800000;
+        }
+        p{
+            text-align: center;
+        }
+        a:hover{
+            color: #66a6ff;
+        }
+        h4{
+            text-align: center;
+        }
+        hr {
+            border: 1px solid #003366;           
+        }
+        blockquote {           
+            border: 1px solid #003366;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        mark {
+            background-color: rgb(35, 201, 137);
+        }
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+        }
+        
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is my first webpage!</p>
+    <div class="container">
     
-    <h2>About Me</h2>
-    <p>I am learning HTML.</p>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">หน้าแรก</a> |
+        <a href="#theerin">เกี่ยวกับฉัน</a> |
+        <a href="https://poomr-680710350.w3spaces.com/aboutme.html" target="_blank">ภูมิรพี</a> |
+        <a href="https://tha-680710803.w3spaces.com/aboutme.html" target="_blank">ธาวินวิชญ์</a> |
+        <a href="https://asa-680710824.w3spaces.com/aboutme.html" target="_blank">อัษฎา</a> |
+        <a href="https://nav-680710186.w3spaces.com/aboutme.html" target="_blank">นวพรรษ</a>
+    </nav>
     
-    <h2>My Favorite Fruits</h2>
-    <ul>
-        <li>Mango</li>
-        <li>Orange</li>
-        <li>Apple</li>
-    </ul>
+    <hr>
     
-    <h2>Useful Links</h2>
-    <a href="https://www.w3schools.com" target="_blank">Learn at W3Schools</a><br>
-    <br>
-    <a href="basichtml2.html"> To basichtml2<br>
-        <button>Click Me!</button>
-    </a>
-    <br>
-    <br>
-    <a href="https://theerin-680710804.w3spaces.com/aboutme.html#theerin">About me</a>
+    <!-- Main Content -->
+    <h1>เกี่ยวกับฉัน</h1>
     
-    <br><br>
+    <h2 id="theerin" >ข้อมูลส่วนตัว</h2>
     
+    <img src="https://shorturl.at/1maL5" alt="Theerin's Photo" width="300" height="300">
+
+    <p id ="intro">
+        สวัสดีครับ! ผมชื่อ <strong>นาย ธีรินทร์ พรมกระทุ่มล้ม</strong><br>
+        เป็นนักศึกษาชั้นปีที่ 1 สาขา<em>เทคโนโลยีสารสนเทศ</em><br>
+        มหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์
+    </p>
+   
+    
+    <h2 id="skills">ทักษะที่กำลังเรียนรู้</h2>
+    <p>
+        ตอนนี้ผมกำลังเรียนรู้ 
+        <abbr title="HyperText Markup Language">HTML</abbr> และ 
+        <abbr title="Cascading Style Sheets">CSS</abbr>
+    </p>
+    
+    <h2>คำพูดที่ชอบ</h2>
+    <blockquote>
+        <p><em>We <mark>(Always)</mark> Lose Something To Get Something.</em></p>
+    <p><small>- Black beans</small></p>
+    </blockquote>
+    <iframe data-testid="embed-iframe" 
+    style="border-radius:12px" 
+    src="https://open.spotify.com/embed/track/5Xq1YZLfCxGanPHleAUJam?utm_source=generator&theme=0" 
+    width="76%" height="80" frameBorder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy">
+    </iframe>
+    
+    
+
+    
+    <h2>ลิงก์ที่น่าสนใจ</h2>
+    <p>
+        <a href="https://www.w3schools.com" target="_blank">W3Schools</a> &rarr; 
+        เว็บเรียนเขียนโค้ดฟรี<br>
+        <a href="https://open.spotify.com/playlist/5uwt2WfkVU2Td5ERlrit7v?si=a32eafed0b484dfa" target="_blank">Playlistเพลงที่ชอบ</a> &rarr; 
+        รวมเพลงที่ผมชอบฟัง<br>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5uwt2WfkVU2Td5ERlrit7v?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </p>
+    <h2>ช่องทางติดต่อ</h2>
+    <p>
+        <a href="mailto:promkratumlom_t@silprakorn.edu">ส่งอีเมลหาผม</a><br>
+        <a href="https://www.facebook.com/theerin.pormkratumlom/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/ney.theerin/" target="_blank">Instagram</a>
+    </p>
+    
+    <h2>งานอดิเรก</h2>
+        <h4>
+            <a href="https://music.youtube.com/watch?v=eBscAp7AIEg&si=GVlC_Qvk6UQnwh32" target="_blank">ฟังเพลง</a> &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;<br>
+            อ่านหนังสือ(LN) &#9733;&#9733;&#9733;&#9733;<br>
+            เล่นดนตรี &#9733;&#9733;&#9733;&#9733;<br>
+            เล่นเกม &#9733;&#9733;&#9733;<br>
+            นอน &#9733;&#9733;&#9733;<br>
+        </h4>
+
+    <hr>
+    
+    <!-- Footer -->
+    <p>
+        <small>&copy; 2024 Theerin's Portfolio. Made with &hearts;</small>
+    </p>
+    
+    <p><a href="#skills">&uarr; กลับไปส่วน Skills</a></p>
 </body>
 </html>
